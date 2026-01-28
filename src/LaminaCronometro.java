@@ -15,7 +15,7 @@ public class LaminaCronometro extends JPanel{
     private final JPanel panelBotones = new JPanel();    
     private final JPanel panelTiempo = new JPanel(new GridBagLayout());
     
-    private final Timer timer = new Timer(1000, new LogicaCronometro());
+    private final Timer timer = new Timer(10, new LogicaCronometro());
     
     private long inicio = System.currentTimeMillis();
     private long ahora = 0;
